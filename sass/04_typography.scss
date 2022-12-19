@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2.6em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/*
+ * proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens)
+*/
+p {
+  -webkit-hyphens: auto;
+  -epub-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; }
+
+/*
+ * Addresses margins set differently in IE6/7.
+ */
+pre {
+  margin: 0; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+small, .small {
+  font-size: 75%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+  
+/** ---------------------------------------------------------------------------------------
+ * Font face - for open sans originally. 
+ * 
+ */
+@font-face {
+  font-family: body-copy;
+  src: url("fonts/texgyrebonum-regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: body-italic;
+  src: url("fonts/open-sans-fonts/opensans_italic/OpenSans-Italic-webfont.eot");
+  src: url("fonts/open-sans-fonts/opensans_italic/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/open-sans-fonts/opensans_italic/OpenSans-Italic-webfont.svg#open_sansregular") format("svg"),
+    url("fonts/open-sans-fonts/opensans_italic/OpenSans-Italic-webfont.ttf") format("truetype"),
+    url("fonts/open-sans-fonts/opensans_italic/OpenSans-Italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: bold-font;
+  src: url("fonts/texgyrebonum-bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: body-light;
+  src: url("fonts/open-sans-fonts/opensans_light/OpenSans-Light-webfont.eot");
+  src: url("fonts/open-sans-fonts/opensans_light/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/open-sans-fonts/opensans_light/OpenSans-Light-webfont.svg#open_sansregular") format("svg"),
+    url("fonts/open-sans-fonts/opensans_light/OpenSans-Light-webfont.ttf") format("truetype"),
+    url("fonts/open-sans-fonts/opensans_light/OpenSans-Light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* { font-family: body-copy, Helvetica, "Liberation Sans", Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: bold-font;
+}
+strong, .strong, th { font-family: bold-font; }
+dfn, .em { font-family: body-italic; }

@@ -1,0 +1,282 @@
+
+* {
+  font-size: 14px; }
+
+h1 {
+  font-size: 2.6em;
+  line-height: 1.4; }
+
+h2 {
+  font-size: 2.4em;
+  line-height: 1.4; }
+
+h3 {
+  font-size: 2.2em;
+  line-height: 1.2; }
+
+h4 {
+  font-size: 2em;
+  line-height: 1; }
+
+h5, h6 {
+  font-size: 1.4em; }
+
+label, input, textarea, button, p, td, div {
+  font-size: 1.2em; }
+
+/**
+* headings: #c80409 rgb(200, 4, 9); // red
+* outer bg: #EECFA1 rgb(238, 207, 161)// beige
+* inner bg: old paper look, #D3BF91 rgb(211, 191, 145) tint ;
+* body text: #3C2C14 rgb(60, 44, 20) dark brown;
+* other text: #6B4F25 rgb(107, 79, 37) brown;
+*/
+* {
+  color: #3c2c14;
+  background: #eecfa1; }
+
+jumbotron, aside, body {
+  background: #eecfa1; }
+
+#content {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 90%;
+  margin: 0 20px;
+  border-radius: 30px;
+  background: #d3bf91;
+  background-image: url("../photos/doll_house.png");
+  background-repeat: none;
+  background-size: 100% 100%; }
+
+/* Navigation colours ---------------------------------------------- */
+nav ul {
+  width: 90%;
+  height: 90px;
+  background-image: url("../photos/plank.png");
+  background-repeat: repeat-x;
+  background-size: 100% 100%;
+  border-radius: 0; }
+
+nav ul li {
+  background: #d3bf91;
+  padding: 0.3em 0.6em;
+  margin-right: 0.2em;
+  border-radius: 10px;
+  color: #3c2c14;
+  text-decoration: none; }
+
+nav li:hover {
+  background-color: rgba(200, 4, 9, 0.4);
+  color: black;
+  text-decoration: underline; }
+
+.hamburger-phone-menu li {
+  background: #d3bf91; }
+
+.submit-button {
+  padding: 0.2em 0.6em;
+  background: -moz-linear-gradient(top, #d3bf91 0%, #6b4f25 90%);
+  background-image: url("../photos/shavings.png");
+  background-repeat: none;
+  background-size: cover;
+  border: 2px solid #6b4f25;
+  border-radius: 5px;
+  font-size: 1.6em;
+  color: white;
+  text-shadow: 0 0 5px black, 0 0 20px #3c2c14; }
+
+.submit-button:hover {
+  background: -moz-linear-gradient(bottom, #d3bf91 0%, #eecfa1 100%);
+  border: 2px solid #3c2c14;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 0 0 5px black, 0 0 20px #6b4f25; }
+
+h1, h2 {
+  color: #c80409; }
+
+/* ==========================================================================
+  Typography
+  ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2.6em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/*
+ * proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens)
+*/
+p {
+  -webkit-hyphens: auto;
+  -epub-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; }
+
+/*
+ * Addresses margins set differently in IE6/7.
+ */
+pre {
+  margin: 0; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+small, .small {
+  font-size: 75%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/** ---------------------------------------------------------------------------------------
+ * Font face - for open sans originally. 
+ * 
+ */
+@font-face {
+  font-family: body-copy;
+  src: url("fonts/texgyrebonum-regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: body-italic;
+  src: url("fonts/open-sans-fonts/opensans_italic/OpenSans-Italic-webfont.eot");
+  src: url("fonts/open-sans-fonts/opensans_italic/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/open-sans-fonts/opensans_italic/OpenSans-Italic-webfont.svg#open_sansregular") format("svg"), url("fonts/open-sans-fonts/opensans_italic/OpenSans-Italic-webfont.ttf") format("truetype"), url("fonts/open-sans-fonts/opensans_italic/OpenSans-Italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: bold-font;
+  src: url("fonts/texgyrebonum-bold.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: body-light;
+  src: url("fonts/open-sans-fonts/opensans_light/OpenSans-Light-webfont.eot");
+  src: url("fonts/open-sans-fonts/opensans_light/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/open-sans-fonts/opensans_light/OpenSans-Light-webfont.svg#open_sansregular") format("svg"), url("fonts/open-sans-fonts/opensans_light/OpenSans-Light-webfont.ttf") format("truetype"), url("fonts/open-sans-fonts/opensans_light/OpenSans-Light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  font-family: body-copy, Helvetica, "Liberation Sans", Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: bold-font; }
+
+strong, .strong, th {
+  font-family: bold-font; }
+
+dfn, .em {
+  font-family: body-italic; }
+
+a {
+  color: #6b4f25; }
+
+a:hover {
+  background: #6b4f25;
+  color: #eecfa1; }
+
+a:visited, a:active {
+  /*       color: #6B4F25; */ }
+
+td a {
+  background: #6b4f25;
+  padding: 10px 20px;
+  border: 1px #3c2c14 solid;
+  border-radius: 5px;
+  color: white; }
+
+ol li, ul li {
+  list-style-type: none; }
+
+/* ----------------------------------------- Phone menu */
+.hamburger-phone-menu li {
+  font-size: 1.4em;
+  z-index: 500;
+  display: none; }
+
+.hamburger-button {
+  display: none; }
+
+#logo {
+  margin: 0 auto; }
+
+#logo img {
+  width: 500px;
+  height: 200px; }
+
+.date {
+  font-weight: bold; }
+
+.errors {
+  color: red; }
+
+.contents-list {
+  border: 2px solid #3c2c14; }
+
+.success {
+  color: #008800;
+  /* green */ }
+
+tbody tr td {
+  border-spacing: 10px; }
+
+form, label, h1, h2, h3 {
+  background: transparent; }
+
+/*# sourceMappingURL=style.css.map */

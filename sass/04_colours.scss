@@ -1,0 +1,77 @@
+/**
+ * headings: #c80409 rgb(200, 4, 9); // red
+ * outer bg: #EECFA1 rgb(238, 207, 161)// beige
+ * inner bg: old paper look, #D3BF91 rgb(211, 191, 145) tint ;
+ * body text: #3C2C14 rgb(60, 44, 20) dark brown;
+ * other text: #6B4F25 rgb(107, 79, 37) brown;
+ */
+
+* { color: $bodyText; background: $outerBG; }
+
+jumbotron, aside, body { background: $outerBG; }
+
+#content {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 90%;
+  margin: 0 20px;
+  border-radius: 30px;
+  background: $innerBG;
+  background-image: url("../photos/doll_house.png");
+  background-repeat: none;
+  background-size: 100% 100%;
+  
+}
+
+/* Navigation colours ---------------------------------------------- */
+nav ul { 
+  width: 90%;
+  height: 90px;
+  background-image: url("../photos/plank.png");
+  background-repeat: repeat-x;
+  background-size: 100% 100%; 
+  border-radius: 0;
+}
+
+nav ul li { 
+  background: $innerBG; 
+  padding: 0.3em 0.6em;
+  margin-right: 0.2em;
+  border-radius: 10px;
+  color: $bodyText;
+  text-decoration: none;
+}
+
+nav li:hover { 
+  background-color: rgba(200, 4, 9, 0.4);
+  color: black;
+  text-decoration: underline;
+}
+
+.hamburger-phone-menu li { background: $innerBG; }
+
+.submit-button {
+  padding: 0.2em 0.6em; 
+  background: -moz-linear-gradient(top, $innerBG 0%, $otherText 90%);
+  background-image: url("../photos/shavings.png");
+  background-repeat: none;
+  background-size: cover;      
+  border: 2px solid $otherText;
+  border-radius: 5px;
+  font-size: 1.6em;
+  color: $white;
+  text-shadow: 0 0 5px $black, 0 0 20px $bodyText;
+}
+
+.submit-button:hover {
+  background: -moz-linear-gradient(bottom, $innerBG 0%, $outerBG 100%);
+  border: 2px solid $bodyText;
+  border-radius: 5px;
+  color: $white;
+  text-shadow: 0 0 5px $black, 0 0 20px $otherText;
+}
+
+h1, h2 {
+  color: $headings;   
+}

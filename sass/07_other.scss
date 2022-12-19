@@ -1,0 +1,50 @@
+
+#logo { 
+  margin: 0 auto;
+}
+
+#logo img {
+  width: 500px;
+  height: 200px;
+}
+
+.volume {
+
+}
+
+.issue {
+
+}
+
+.date {
+    font-weight: bold;
+
+}
+
+.summary {
+
+}
+
+.contents {
+
+}
+
+.errors {
+    color: red;
+}
+
+.contents-list {
+    border: 2px solid $bodyText;
+	
+}
+.success {
+    color: $green; /* green */
+}
+
+tbody tr td {
+    border-spacing: 10px;
+}
+
+form, label, h1, h2, h3 {
+  background: transparent;
+}

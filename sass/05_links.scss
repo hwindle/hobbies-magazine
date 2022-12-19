@@ -1,0 +1,20 @@
+a {
+    color: $otherText;
+}
+
+a:hover {
+    background: $otherText;
+    color: $outerBG;
+}
+
+a:visited, a:active {
+	/*       color: #6B4F25; */
+}
+
+td a {
+    background: $otherText;
+    padding: 10px 20px;
+    border: 1px $bodyText solid;
+    border-radius: 5px;
+    color: $white;
+}

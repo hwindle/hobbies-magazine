@@ -1,0 +1,13 @@
+ol li, ul li { list-style-type: none; }
+
+/* ----------------------------------------- Phone menu */
+.hamburger-phone-menu li {
+  font-size: 1.4em;
+  z-index: 500;
+  display: none;
+}
+
+.hamburger-button {
+  display: none;
+}
+  
